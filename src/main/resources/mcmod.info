@@ -1,0 +1,19 @@
+[
+{
+"modid": "lunaarcana",
+"name": "Luna Arcana",
+"description": "The magic of the moon is a mystery to the world and its wonders provide for some dark secrets.",
+"version": "0.0.1-build",
+"credits": "Alpha Testers: --",
+"logoFile": "",
+"mcversion": "1.7.10",
+"url": "http://www.miningmark48.tk",
+"updateUrl": "",
+"authorList": [ "MiningMark48", "Codyrule040" ],
+"parent":"",
+"screenshots": [],
+"dependencies": [
+"mod_MinecraftForge"
+]
+}
+]
