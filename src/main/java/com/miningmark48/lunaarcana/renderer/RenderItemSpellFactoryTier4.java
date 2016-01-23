@@ -1,19 +1,19 @@
 package com.miningmark48.lunaarcana.renderer;
 
-import com.miningmark48.lunaarcana.model.ModelSpellFactoryTier5;
-import com.miningmark48.lunaarcana.tileentity.TileEntitySpellFactoryTier5;
+import com.miningmark48.lunaarcana.model.ModelSpellFactoryTier4;
+import com.miningmark48.lunaarcana.tileentity.TileEntitySpellFactoryTier4;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.IItemRenderer;
 import org.lwjgl.opengl.GL11;
 
-public class RenderItemSpellFactoryTier5 implements IItemRenderer{
+public class RenderItemSpellFactoryTier4 implements IItemRenderer{
 
-    private final ModelSpellFactoryTier5 model;
+    private final ModelSpellFactoryTier4 model;
 
-    public RenderItemSpellFactoryTier5(){
-        model = new ModelSpellFactoryTier5();
+    public RenderItemSpellFactoryTier4(){
+        model = new ModelSpellFactoryTier4();
     }
 
     @Override
@@ -32,23 +32,23 @@ public class RenderItemSpellFactoryTier5 implements IItemRenderer{
         if (type != type.ENTITY && type != type.EQUIPPED) {
             GL11.glPushMatrix();
             GL11.glScalef(1.0f, 1.0f, 1.0f);
-            TileEntityRendererDispatcher.instance.renderTileEntityAt(new TileEntitySpellFactoryTier5(), 0.0D, -0.15D, 0.0D, 0.0F);
+            TileEntityRendererDispatcher.instance.renderTileEntityAt(new TileEntitySpellFactoryTier4(), 0.0D, -0.15D, 0.0D, 0.0F);
             GL11.glPopMatrix();
         } else if (type == type.ENTITY && !(item.getItem() instanceof ItemBlock)) {
             GL11.glPushMatrix();
             GL11.glScalef(1.5f, 1.5f, 1.5f);
-            TileEntityRendererDispatcher.instance.renderTileEntityAt(new TileEntitySpellFactoryTier5(), 0.0D, -0.15D, 0.0D, 0.0F);
+            TileEntityRendererDispatcher.instance.renderTileEntityAt(new TileEntitySpellFactoryTier4(), 0.0D, -0.15D, 0.0D, 0.0F);
             GL11.glPopMatrix();
         } else if (type == type.ENTITY && item.getItem() instanceof ItemBlock) {
             GL11.glPushMatrix();
             GL11.glScalef(3.0f, 3.0f, 3.0f);
-            TileEntityRendererDispatcher.instance.renderTileEntityAt(new TileEntitySpellFactoryTier5(), 0.0D, 0.0D, 0.0D, 0.0F);
+            TileEntityRendererDispatcher.instance.renderTileEntityAt(new TileEntitySpellFactoryTier4(), 0.0D, 0.0D, 0.0D, 0.0F);
             GL11.glPopMatrix();
         } else if (type == type.EQUIPPED) {
             GL11.glPushMatrix();
             GL11.glScalef(1.1f, 1.1f, 1.1f);
             GL11.glRotatef(45, -1, 0, 0);
-            TileEntityRendererDispatcher.instance.renderTileEntityAt(new TileEntitySpellFactoryTier5(), 0.2D, -0.3D, 0.35D, 0.0F);
+            TileEntityRendererDispatcher.instance.renderTileEntityAt(new TileEntitySpellFactoryTier4(), 0.2D, -0.3D, 0.35D, 0.0F);
             GL11.glRotatef(45, -1, 0, 0);
             GL11.glPopMatrix();
         }
