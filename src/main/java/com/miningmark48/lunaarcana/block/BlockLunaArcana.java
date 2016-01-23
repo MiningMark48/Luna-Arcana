@@ -15,4 +15,8 @@ public class BlockLunaArcana extends Block {
         this.setResistance(1.0F);
     }
 
+    public boolean isOpaque() {
+        return false;
+    }
+
 }
