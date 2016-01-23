@@ -1,7 +1,11 @@
 itemGroup.lunaarcana=Luna Arcana
 
+tile.spellFactoryTier1.name=Stone Spell Factory
+tile.spellFactoryTier2.name=Iron Spell Factory
+tile.spellFactoryTier3.name=Bronze Spell Factory
 tile.spellFactoryTier4.name=Gold Spell Factory
 tile.spellFactoryTier5.name=Diamond Spell Factory
+tile.spellFactoryTier6.name=Obsidian Spell Factory
 
 item.elixirIngot.name=Elixir Ingot
 item.darkElixirIngot.name=Dark Elixir Ingot
@@ -15,3 +19,7 @@ item.darkElixirChestplate.name=Dark Elixir Chestplate
 item.darkElixirLeggings.name=Dark Elixir Leggings
 item.darkElixirBoots.name=Dark Elixir Boots
 item.wandTier5.name=Diamond Wand
+
+log.info.preinit=Pre-Init Complete!
+log.info.init=Init Complete!
+log.info.postinit=Post-Init Complete!
