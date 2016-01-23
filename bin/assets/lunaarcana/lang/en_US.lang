@@ -3,8 +3,15 @@ itemGroup.lunaarcana=Luna Arcana
 tile.spellFactoryTier4.name=Gold Spell Factory
 tile.spellFactoryTier5.name=Diamond Spell Factory
 
-item.wandTier5.name=Diamond Wand
+item.elixirIngot.name=Elixir Ingot
+item.darkElixirIngot.name=Dark Elixir Ingot
+item.bronzeIngot.name=Bronze Ingot
 item.elixirHelmet.name=Elixir Helmet
 item.elixirChestplate.name=Elixir Chestplate
 item.elixirLeggings.name=Elixir Leggings
 item.elixirBoots.name=Elixir Boots
+item.darkElixirHelmet.name=Dark Elixir Helmet
+item.darkElixirChestplate.name=Dark Elixir Chestplate
+item.darkElixirLeggings.name=Dark Elixir Leggings
+item.darkElixirBoots.name=Dark Elixir Boots
+item.wandTier5.name=Diamond Wand
