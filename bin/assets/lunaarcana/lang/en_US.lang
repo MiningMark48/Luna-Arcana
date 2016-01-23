@@ -4,3 +4,7 @@ tile.spellFactoryTier4.name=Gold Spell Factory
 tile.spellFactoryTier5.name=Diamond Spell Factory
 
 item.wandTier5.name=Diamond Wand
+item.elixirHelmet.name=Elixir Helmet
+item.elixirChestplate.name=Elixir Chestplate
+item.elixirLeggings.name=Elixir Leggings
+item.elixirBoots.name=Elixir Boots

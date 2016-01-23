@@ -5,6 +5,7 @@ import com.miningmark48.lunaarcana.init.ModItems;
 import com.miningmark48.lunaarcana.renderer.*;
 import com.miningmark48.lunaarcana.tileentity.*;
 import cpw.mods.fml.client.registry.ClientRegistry;
+import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.MinecraftForgeClient;
@@ -25,6 +26,10 @@ public class ClientProxy extends CommonProxy{
      //Items
         MinecraftForgeClient.registerItemRenderer(ModItems.wandTier5, new RenderItemWandTier5());
 
+    }
+
+    public int addArmor(String armor){
+        return RenderingRegistry.addNewArmourRendererPrefix(armor);
     }
 
     public void registerTileEntitySpecialRenderer(){
