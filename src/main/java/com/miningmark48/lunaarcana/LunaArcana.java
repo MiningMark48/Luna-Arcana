@@ -1,6 +1,7 @@
 package com.miningmark48.lunaarcana;
 
 import com.miningmark48.lunaarcana.handler.ConfigurationHandler;
+import com.miningmark48.lunaarcana.handler.GuiHandler;
 import com.miningmark48.lunaarcana.init.*;
 import com.miningmark48.lunaarcana.proxy.ClientProxy;
 import com.miningmark48.lunaarcana.proxy.IProxy;
@@ -13,6 +14,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.util.StatCollector;
 
@@ -38,7 +40,7 @@ public class LunaArcana {
 
         GameRegistry.registerWorldGenerator(new WorldGen(), 0);
 
-        //NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
+        NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 
         LogHelper.info(StatCollector.translateToLocal("log.info.preinit"));
     }

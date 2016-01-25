@@ -31,3 +31,6 @@ item.wandTier5.name=Diamond Wand
 log.info.preinit=Pre-Init Complete!
 log.info.init=Init Complete!
 log.info.postinit=Post-Init Complete!
+
+gui.spellFactoryTier1.name=Stone Spell Factory
+gui.spellFactoryTier2.name=Iron Spell Factory
