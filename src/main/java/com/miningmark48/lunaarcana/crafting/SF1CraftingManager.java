@@ -42,7 +42,7 @@ public class SF1CraftingManager {
 
         this.addShapelessRecipe(new ItemStack(Items.diamond, 1), new ItemStack(Blocks.dirt));
 
-        this.addRecipe(new ItemStack(Items.diamond, 1), new Object[]{"x", "x", "x", "x", "x", "x", 'x', Blocks.dirt});
+        this.addRecipe(new ItemStack(Items.diamond, 1), new Object[]{"x", "x", "x", "x", "x", "x", 'x', Blocks.stone});
 
         Collections.sort(this.recipes, new SF1RecipeSorter(this));
     }

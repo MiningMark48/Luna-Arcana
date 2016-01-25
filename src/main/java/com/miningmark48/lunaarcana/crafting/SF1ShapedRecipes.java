@@ -8,13 +8,9 @@ import net.minecraft.world.World;
 
 public class SF1ShapedRecipes implements IRecipe{
 
-    /** How many horizontal slots this recipe is wide. */
     public final int recipeWidth;
-    /** How many vertical slots this recipe uses. */
     public final int recipeHeight;
-    /** Is a array of ItemStack that composes the recipe. */
     public final ItemStack[] recipeItems;
-    /** Is the ItemStack that you get when craft the recipe. */
     private ItemStack recipeOutput;
     private boolean field_92101_f;
     private static final String __OBFID = "CL_00000093";
