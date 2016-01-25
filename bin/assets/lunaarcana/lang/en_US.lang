@@ -1,11 +1,19 @@
 itemGroup.lunaarcana=Luna Arcana
 
+tile.elixirBlock.name=Block of Elixir
+tile.darkElixirBlock.name=Block of Dark Elixir
+tile.bronzeBlock.name=Bronze Block
+tile.crystalElixirBlock.name=Crystallized Elixir Block
+tile.crystalDarkElixirBlock.name=Crystallized Dark Elixir Block
 tile.spellFactoryTier1.name=Stone Spell Factory
 tile.spellFactoryTier2.name=Iron Spell Factory
 tile.spellFactoryTier3.name=Bronze Spell Factory
 tile.spellFactoryTier4.name=Gold Spell Factory
 tile.spellFactoryTier5.name=Diamond Spell Factory
 tile.spellFactoryTier6.name=Obsidian Spell Factory
+tile.elixirOre.name=Elixir Ore
+tile.darkElixirOre.name=Dark Elixir Ore
+tile.bronzeOre.name=Bronze Ore
 
 item.elixirIngot.name=Elixir Ingot
 item.darkElixirIngot.name=Dark Elixir Ingot

@@ -13,6 +13,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.util.StatCollector;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
@@ -35,7 +36,7 @@ public class LunaArcana {
 
         proxy.registerRenderThings();
 
-        //GameRegistry.registerWorldGenerator(new WorldGen(), 0);
+        GameRegistry.registerWorldGenerator(new WorldGen(), 0);
 
         //NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 
@@ -45,7 +46,7 @@ public class LunaArcana {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
 
-        //Recipes.init();
+        Recipes.init();
         //Achievements.init();
         LogHelper.info(StatCollector.translateToLocal("log.info.init"));
     }

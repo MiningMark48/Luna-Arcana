@@ -18,7 +18,7 @@ public class ModItems {
     public static final Item bronzeIngot = new ItemLunaArcana().setUnlocalizedName("bronzeIngot").setTextureName(Reference.MOD_ID + ":bronzeIngot").setCreativeTab(CreativeTabLunaArcana.LunaArcana_TAB);
 
     //Wands
-    public static final Item wandTier5 = new ItemWandTier5().setUnlocalizedName("wandTier5").setCreativeTab(CreativeTabLunaArcana.LunaArcana_TAB);
+    public static final Item wandTier5 = new ItemWandTier5().setUnlocalizedName("wandTier5").setTextureName(Reference.MOD_ID + ":wandTier5").setCreativeTab(CreativeTabLunaArcana.LunaArcana_TAB);
 
     //Armor
     public static final Item elixirHelmet = new ItemElixirArmor(matElixir, 0).setUnlocalizedName("elixirHelmet").setTextureName(Reference.MOD_ID + ":elixirHelmet").setCreativeTab(CreativeTabLunaArcana.LunaArcana_TAB);

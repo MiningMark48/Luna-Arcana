@@ -15,7 +15,7 @@ public class ClientProxy extends CommonProxy{
     public void registerRenderThings(){
 
      //Blocks
-        //Spell Factory Tier 2
+        //Spell Factory Tier 1
             TileEntitySpecialRenderer sf1 = new RenderSpellFactoryTier1();
             ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySpellFactoryTier1.class, sf1);
             MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.spellFactoryTier1), new RenderItemSpellFactoryTier1());
@@ -40,7 +40,7 @@ public class ClientProxy extends CommonProxy{
             ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySpellFactoryTier6.class, sf6);
             MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.spellFactoryTier6), new RenderItemSpellFactoryTier6());
      //Items
-        MinecraftForgeClient.registerItemRenderer(ModItems.wandTier5, new RenderItemWandTier5());
+        //MinecraftForgeClient.registerItemRenderer(ModItems.wandTier5, new RenderItemWandTier5());
 
     }
 
