@@ -1,13 +1,18 @@
 package com.miningmark48.lunaarcana.renderer;
 
+import com.miningmark48.lunaarcana.init.ModItems;
 import com.miningmark48.lunaarcana.model.ModelSpellFactoryTier3;
 import com.miningmark48.lunaarcana.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.client.renderer.entity.RenderItem;
+import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
@@ -16,6 +21,9 @@ import org.lwjgl.opengl.GL11;
 public class RenderSpellFactoryTier3 extends TileEntitySpecialRenderer{
 
     private final ModelSpellFactoryTier3 model;
+
+    ItemStack stack = new ItemStack(ModItems.elixirIngot, 1, 0);
+    EntityItem entItem = new EntityItem(Minecraft.getMinecraft().theWorld, 0D, 0D, 0D, stack);
 
     public RenderSpellFactoryTier3(){
 
@@ -38,6 +46,15 @@ public class RenderSpellFactoryTier3 extends TileEntitySpecialRenderer{
         GL11.glRotatef(180F, 0.0F, 0.0F, 1.0F);
         this.model.render((Entity) null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
         GL11.glPopMatrix();
+        GL11.glPopMatrix();
+
+        GL11.glPushMatrix();
+        this.entItem.hoverStart = 0.0F;
+        RenderItem.renderInFrame = true;
+        GL11.glTranslatef((float)x + 0.5F, (float)y + 0.4F, (float)z + 0.3F);
+        GL11.glRotatef(180, 0, 1, 1);
+        RenderManager.instance.renderEntityWithPosYaw(this.entItem, 0.0D, 0.0D, 0.0D, 0.0F, 0.0F);
+        RenderItem.renderInFrame = false;
         GL11.glPopMatrix();
     }
     private void adjustLightFixture(World world, int i, int j, int k, Block block){
